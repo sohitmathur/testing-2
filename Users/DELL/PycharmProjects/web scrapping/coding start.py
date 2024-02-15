@@ -563,17 +563,17 @@ import timeit
 # rotating list
 
 
-# def right_rotate(list,num):
-#     outputlist=[]
-#     for item in range(len(list)-num,len(list)):
-#         outputlist.append(list[item])
-#     for item in range(0,len(list)-num):
-#         outputlist.append(list[item])
-#     return outputlist
-#
-# rotate_Number=3
-# list_1=[1,2,3,4,5]
-# print(right_rotate(list_1,rotate_Number))
+def right_rotate(list,num):
+    outputlist=[]
+    for item in range(len(list)-num,len(list)):
+        outputlist.append(list[item])
+    for item in range(0,len(list)-num):
+        outputlist.append(list[item])
+    return outputlist
+
+rotate_Number=3
+list_1=[1,2,3,4,5]
+print(right_rotate(list_1,rotate_Number))
 
 # data=[1,2,3,4,5]
 # it=iter(data)
@@ -614,3 +614,46 @@ import timeit
 # dev=smart_dev(dev)
 #
 # dev(4,5)
+# list=[i for i in range(10) if i%2]
+# print(list)
+
+# dict={n:n*n for n in range(11)}
+# print(dict)
+
+# def genrator(n):
+#     for i in range(1,n+1):
+#         yield i*i
+# g=genrator(3)
+# print(next(g))
+# print(next(g))
+# print(next(g))
+
+# class A:
+#     def func1(self):
+#         print("the func1 is running")
+# class B:
+#     def func2(self):
+#         print("the func2 is running")
+# class C(A,B):
+#     def func3(self):
+#         print("the func3 is running")
+# first_class=C
+# first_class.
+
+
+# for i in range(1,10):
+#     if i==7:
+#         break
+#     print(i,end=",")
+
+# with open("oop") as f:
+#  e=f.read()
+# print(e)
+
+
+# a=5
+# b=0
+# try:
+#  print(a/b)
+# except Exception as e:
+#     print("the error is",e)
